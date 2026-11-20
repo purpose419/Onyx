@@ -72,8 +72,9 @@ input{
   transform: scale(1.08);
 }
 
-@media(max-width:700px){
+@media(max-width:750px){
   .wrap{
+    background-color: none;
  border:none;
 text-align: center;
 
