@@ -72,3 +72,11 @@ input{
   transform: scale(1.08);
 }
 
+@media(max-width:700px){
+  .wrap{
+ border:none;
+text-align: center;
+
+}
+
+}
