@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(135deg,#D4AF37,#000000 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrap{
+ background-color: #141414;
+ padding: 30px;
+ border-radius: 20px;
+ width: 30%;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+border: 1px solid #D4AF37;
+}
+
+.wrap h2{
+    margin: 0 0 5px 0;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D4AF37;
+    padding: 20px;
+}
+input{
+    box-sizing: border-box;
+    border:0.5px solid #ddd;
+    padding: 9px;
+    width: 250px;
+    border: 20px;
+    display: flex;
+    border-radius: 12px;
+    margin: 8px auto;
+    flex-direction: column;
+  
+}
+
+.btn-txt{
+    padding-top: 20px;
+}
+
+
+#login{
+    padding: 5px;
+    width: 30%;
+    border: none;
+    color: #fff;
+    background-color:#000 ;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.btn-txt p{
+    margin-top: 20px;
+    color: grey;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-txt a{
+    color: grey;
+    text-decoration: none;
+}
+#login:hover{
+    color: #000;
+    background-color: #D4AF37;
+     transition: 0.5s ease-in-out;
+  transform: scale(1.08);
+}
