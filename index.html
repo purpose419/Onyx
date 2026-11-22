@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Onyx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+ integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer">
+    <title>Onyx.site</title>
 </head>
 <body>
     <div class="wrap">
-        <h2 id="header">Sign In</h2>
+        <img src="images/Screenshot_2026-11-20_171040-removebg-preview.png" alt="">
+        <h2 id="header"  >Sign In</h2>
         
         <input  id="email" type="email" placeholder="Email" required>
-        <input  id="password" type="password" placeholder="Password" required minlength="8" >
+        <input  id="password" type="password" placeholder=" Email Password" required minlength="8" >
 
 
   <div class="btn-txt">  
       <button id="login" onclick="login()" type="submit">Next</button> 
-      <p id="title"> <a href="">Already have an account </a></p>
+      <p id="title" onclick="sign()"> <a href="">Already have an account </a></p>
+      <p  onclick="showAlert()" style="cursor: pointer ;">Sign in another way</p>
   </div>
+  <section id="notice" onclick="hideAlert()">
+    <h3 > <i class="fab fa-google"></i><a href="https:google.com">Sign in with Google</a></h3>
+  </section>
     </div>
       <script src="script.js"></script>
 </body>
